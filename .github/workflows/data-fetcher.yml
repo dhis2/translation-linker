@@ -26,7 +26,7 @@ jobs:
       run: python3 transifex-data-fetcher.py
       shell: bash
       env:
-        TXTOKEN: ${{ secrets.DHIS2_TX_TOKEN }}
+        TX_TOKEN: ${{ secrets.DHIS2_TX_TOKEN }}
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
