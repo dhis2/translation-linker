@@ -57,11 +57,20 @@ function updateLangTable() {
   var b = document.getElementById("branch").value;
 
   var res = transifex["details"][b];
+  var projmap = transifex["projects"];
 
-  console.log(res);
 
   // CREATE DYNAMIC TABLE.
   var table = document.createElement("table");
+
+  // header
+  var tr = table.insertRow(-1);                   // TABLE ROW.
+  var header = ['Project', '% Completed', 'Resources']
+  for (var i = 0; i < header.length; i++) {
+      var th = document.createElement("th");      // TABLE HEADER.
+      th.innerHTML = header[i];
+      tr.appendChild(th);
+  }
 
   var tr = table.insertRow(-1); // TABLE ROW.
 
@@ -85,7 +94,7 @@ function updateLangTable() {
       var tabCell = tr.insertCell(-1);
       var mylink =
         '<a href="https://www.transifex.com/hisp-uio/' +
-        proj +
+        projmap[proj] +
         "/translate/#" +
         l +
         "/" +
@@ -112,10 +121,22 @@ function updateLeaderboard() {
     var versions = transifex["versions"];
 
     var table = document.createElement("table");
-    var tr = table.insertRow(-1); // TABLE ROW.
+
+    // header
+    var tr = table.insertRow(-1);                   // TABLE ROW.
+    identity = (x) => x;
+    var leaderH = versions.map(identity);
+    leaderH.push("Language");
+    console.log(leaderH);
+    for(var i = leaderH.length - 1; i >= 0; i--) {
+        var th = document.createElement("th");      // TABLE HEADER.
+        th.innerHTML = leaderH[i];
+        tr.appendChild(th);
+    }
+
 
     for(var l in langs){
-        tr = table.insertRow(-1);
+        var tr = table.insertRow(-1);
         var tabCellH = tr.insertCell(-1);
         tabCellH.innerHTML = langs[l];
 
