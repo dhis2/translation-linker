@@ -28,8 +28,12 @@ jobs:
       env:
         TX_TOKEN: ${{ secrets.DHIS2_TX_TOKEN }}
 
+    - name: touch the updated file
+      run: touch data/transifex.json
+      shell: bash
+      
     - name: Commit changes
-      uses: EndBug/add-and-commit@v4
+      uses: EndBug/add-and-commit@v7
       with:
         author_name: Philip-Larsen-Donnelly
         author_email: phil@dhis2.org
