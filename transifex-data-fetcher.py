@@ -9,6 +9,7 @@ import os
 import json
 from transifex.api import transifex_api
 
+print(os.getenv("PWD"))
 
 transifex_api.setup(auth=os.getenv("TX_TOKEN"))
 
