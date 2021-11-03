@@ -94,7 +94,7 @@ langos = {k: v for k, v in sorted(lango.items(), key=lambda item: item[1],revers
 stats = {"versions": versions, "overview" : lang_stats,"details":lang_statsall,"languages": langos, "projects":projmap }
          
 
-f = open("data/transifex.json","w")
+f = open("./data/transifex.json","w")
 f.write("transifex = "+json.dumps(stats,indent=2)+";")
 f.close()
 
