@@ -1,0 +1,124 @@
+/* demo rules */
+body {
+  margin: 32px;
+}
+/* end demo rules */
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.css");
+
+:root {
+  --base-text: #051841;
+  --link-text: #0145f3;
+  --border: #e8edf2;
+  --hover-bg: #fbfcfd;
+}
+
+/* tl = translation-linker */
+
+div.tl-container {
+  font-family: "Inter";
+  color: var(--base-text);
+  font-size: 0.875rem;
+  width: 480px;
+  margin: 0 auto;
+}
+
+table.tl {
+  min-width: 480px;
+  border-collapse: collapse;
+}
+/* resource rows */
+tr.tl-item td {
+  padding: 8px 8px 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+tr.tl-item td.resource {
+  width: 100%;
+}
+
+td.resource a {
+  color: var(--link-text);
+  text-decoration: none;
+  display: block;
+}
+
+td.resource a:hover {
+  text-decoration: underline;
+}
+
+tr.tl-item:hover td {
+  background: var(--hover-bg);
+}
+/* headings */
+tr.tl-heading td {
+  font-weight: 500;
+  padding: 24px 0 8px 0;
+}
+/* percentage */
+.percentage-track {
+  background: #f8f7f7;
+  width: 100px;
+}
+.percentage {
+  padding: 4px 4px;
+}
+/* percentage colors, for reference */
+.percentage-upto-25 {
+  background-color: #ffc6c6;
+}
+.percentage-upto-50 {
+  background-color: #ffebc6;
+}
+.percentage-upto-75 {
+  background-color: #eaf2c8;
+}
+.percentage-upto-100 {
+  background-color: #d5efd3;
+}
+/* selects */
+.selectors {
+  display: flex;
+}
+.selector {
+  margin-right: 12px;
+}
+.selector label {
+  display: block;
+  margin-bottom: 4px;
+}
+.locale-select select {
+  min-width: 220px;
+}
+.version-select select {
+  min-width: 110px;
+}
+/* mode selector */
+.mode-selector {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+button.mode {
+  background: white;
+  padding: 8px;
+  border: 1px solid var(--border);
+  color: #4a5768;
+}
+button.mode:hover {
+  background: var(--hover-bg);
+  cursor: pointer;
+}
+button.mode-selected {
+  background: var(--base-text);
+  color: white;
+  border: 1px solid var(--base-text);
+}
+button.mode-selected:hover {
+  background: var(--base-text);
+}
+.mode-selector button.mode:first-of-type {
+  border-radius: 6px 0 0 6px;
+}
+.mode-selector button.mode:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
