@@ -77,7 +77,7 @@ function updateLangTable() {
 
   var current = "";
   var last = "";
-  for (const [proj, files] of Object.entries(res)) {
+  for (const [proj, files] of Object.entries(res).sort()) {
     current = proj;
     for (const [file, lang] of Object.entries(files)) {
 
