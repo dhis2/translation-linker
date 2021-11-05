@@ -28,7 +28,7 @@ table.tl {
 }
 /* resource rows */
 tr.tl-item td {
-  padding: 8px 8px 8px 12px;
+  padding: 6px 8px 6px 12px;
   border-bottom: 1px solid var(--border);
 }
 
