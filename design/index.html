@@ -7,8 +7,10 @@
     <title>design: translation linker</title>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="../data/transifex.json"></script>
+    <script src="../js/lang-lister.js"></script>
   </head>
-  <body>
+  <body onload="initialiseSelector();">
     <div class="tl-container">
       <div class="mode-selector">
         <button class="mode mode-selected">Coverage per language</button>
@@ -19,94 +21,15 @@
           <tr>
             <td colspan="2">
               <div class="selectors">
-                <div class="locale-select selector">
-                  <label for="locale-select">Choose a locale:</label>
-
-                  <select name="locales" id="locale-select">
-                    <option value="arabic">Arabic</option>
-                    <option value="french">French</option>
-                  </select>
+                <div class="locale-select selector" id="locale-select">
                 </div>
-                <div class="version-select selector">
-                  <label for="version-select">DHIS2 version</label>
-
-                  <select name="versions" id="version-select">
-                    <option value="master">master</option>
-                    <option value="2-37">2.37</option>
-                    <option value="2-36">2.36</option>
-                  </select>
+                <div class="version-select selector" id="version-select">
                 </div>
               </div>
             </td>
           </tr>
         </thead>
-        <tbody>
-          <tr class="tl-heading">
-            <td colspan="2">APP: Data Administration</td>
-          </tr>
-          <tr class="tl-item">
-            <td class="resource">
-              <a href="#">file-menu-en-pot</a>
-            </td>
-            <td class="completion">
-              <div class="percentage-track">
-                <div
-                  class="percentage"
-                  style="width: 16%; background-color: #ffc6c6"
-                >
-                  16%
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="tl-item">
-            <td class="resource">
-              <a href="#">file-select-en-pot</a>
-            </td>
-            <td class="completion">
-              <div class="percentage-track">
-                <div
-                  class="percentage"
-                  style="width: 97%; background-color: #d5efd3"
-                >
-                  97%
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="tl-heading">
-            <td colspan="2">APP: Maintenance</td>
-          </tr>
-          <tr class="tl-item">
-            <td class="resource">
-              <a href="#">resource--title</a>
-            </td>
-            <td class="completion">
-              <div class="percentage-track">
-                <div
-                  class="percentage"
-                  style="width: 44%; background-color: #ffebc6"
-                >
-                  44%
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="tl-item">
-            <td class="resource">
-              <a href="#">test--long-resource-name</a>
-            </td>
-            <td class="completion">
-              <div class="percentage-track">
-                <div
-                  class="percentage"
-                  style="width: 73%; background-color: #eaf2c8"
-                >
-                  73%
-                </div>
-              </div>
-            </td>
-          </tr>
+        <tbody id="locale-resources">
         </tbody>
       </table>
     </div>
