@@ -132,6 +132,9 @@ function updateLangTable() {
       else if (p < 75.0){
         pbg = "percentage-upto-75";
       }
+      else if (p === 100.0){
+        pbg = "percentage-100"
+      }
 
       tabCell.innerHTML =
         '<div class="percentage-track"><div class="percentage '+pbg+'" style="width:' + perc + ';">' + perc + "</div></div>";

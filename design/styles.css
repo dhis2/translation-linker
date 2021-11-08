@@ -58,9 +58,11 @@ tr.tl-heading td {
 .percentage-track {
   background: #f8f7f7;
   width: 100px;
+  overflow: hidden;
 }
 .percentage {
   padding: 4px 4px;
+  max-width: 100px;
 }
 /* percentage colors, for reference */
 .percentage-upto-25 {
@@ -74,6 +76,10 @@ tr.tl-heading td {
 }
 .percentage-upto-100 {
   background-color: #d5efd3;
+}
+.percentage-100 {
+  background-color: #569850;
+  color: white;
 }
 /* selects */
 .selectors {
