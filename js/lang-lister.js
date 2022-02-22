@@ -174,7 +174,7 @@ function updateLeaderboard() {
 
 
     for(var l in langs){
-        if (l != "en") {
+        if (l != "en" & l != "uz") {
         var tr = table.insertRow(-1);
         var tabCellH = tr.insertCell(-1);
         tabCellH.innerHTML = langs[l];

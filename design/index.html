@@ -13,11 +13,11 @@
   <body onload="initialiseSelector();">
     <div class="tl-container">
       <div class="mode-selector">
-        <button id="CPL" class="mode mode-selected" onclick="covPerLanguage();">Coverage per language</button>
-        <button id="LO" class="mode" onclick="langOverview();">Languages overview</button>
+        <button id="LO" class="mode mode-selected" onclick="langOverview();">Languages overview</button>
+        <button id="CPL" class="mode" onclick="covPerLanguage();">Coverage per language</button>
       </div>
 
-      <table id="cplTable" class="tl">
+      <table id="cplTable" class="tl" style="display:none;">
         <thead>
           <tr>
             <td colspan="2">
@@ -35,6 +35,6 @@
       </table>
 
     </div>
-    <div class="tl-containerL" id="leaderBoard" style="display:none;"></div>
+    <div class="tl-containerL" id="leaderBoard"></div>
   </body>
 </html>
