@@ -238,6 +238,7 @@ function covPerLanguageSelect(lang,ver) {
   l.value = lang;
   b.value = ver;
   covPerLanguage();
+  updateLangTable();
 }
 
 function covPerLanguage() {
