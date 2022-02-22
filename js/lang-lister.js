@@ -110,7 +110,7 @@ function updateLangTable() {
         l +
         "/" +
         file +
-        '">' +
+        '" target="_parent">' +
         file +
         "</a>";
       console.log(mylink);
