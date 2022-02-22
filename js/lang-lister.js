@@ -45,7 +45,7 @@ function initialiseSelector() {
 
 
     updateLangTable();
-    // updateLeaderboard();
+    updateLeaderboard();
 }
 
 function updateLangTable() {
@@ -158,6 +158,7 @@ function updateLeaderboard() {
     var versions = transifex["versions"];
 
     var table = document.createElement("table");
+    table.className = "lb";
 
     // header
     var tr = table.insertRow(-1);                   // TABLE ROW.
@@ -165,7 +166,7 @@ function updateLeaderboard() {
     var leaderH = versions.map(identity);
     leaderH.push("Language");
     console.log(leaderH);
-    for(var i = leaderH.length - 1; i >= 0; i--) {
+    for(var i = leaderH.length - 1; i >= 2; i--) {
         var th = document.createElement("th");      // TABLE HEADER.
         th.innerHTML = leaderH[i];
         tr.appendChild(th);
@@ -173,16 +174,37 @@ function updateLeaderboard() {
 
 
     for(var l in langs){
+        if (l != "en") {
         var tr = table.insertRow(-1);
         var tabCellH = tr.insertCell(-1);
         tabCellH.innerHTML = langs[l];
+        tabCellH.className = "resource";
 
-        for (var v = versions.length - 1; v >= 0; v--) {
+        for (var v = versions.length - 1; v >= 2; v--) {
             var tabCell = tr.insertCell(-1);
+            tabCell.className = "completion";
+            // tabCell.addEventListener("click", covPerLanguage());
+            tabCell.setAttribute("onclick", "covPerLanguageSelect('"+l+"','"+leaderH[v]+"');");
             console.log(v,l);
             var perc = 100*res[versions[v]][l]/res[versions[v]]['en'];
-            tabCell.innerHTML =  '<div class="progress" style="width:' + perc + '%;">' + perc.toFixed(1) + "%</div>";
+            p = parseFloat(perc);
+            var pbg = "percentage-upto-100";
+            if (p < 25.0){
+              pbg = "percentage-upto-25";
+            }
+            else if (p < 50.0){
+              pbg = "percentage-upto-50";
+            }
+            else if (p < 75.0){
+              pbg = "percentage-upto-75";
+            }
+            else if (p === 100.0){
+              pbg = "percentage-100"
+            }
+            tabCell.innerHTML =  '<div class="percentage-track"><div class="percentage '+pbg+'" style="width:' + perc.toFixed(1) + '%;">' + perc.toFixed(2) + "%</div></div>";
+            //'<div class="progress" style="width:' + perc + '%;">' + perc.toFixed(1) + "%</div>";
         }
+      }
     }
 
   
@@ -191,5 +213,43 @@ function updateLeaderboard() {
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 
+
+}
+
+function langOverview() {
+  var LO = document.getElementById("LO");
+  var CPL = document.getElementById("CPL");
+
+  LO.className = "mode mode-selected";
+  CPL.className = "mode";
+
+  var cplTable = document.getElementById("cplTable");
+  var leaderBoard = document.getElementById("leaderBoard");
+  cplTable.style.display = "none";
+  leaderBoard.style.display = "block";
+
+}
+
+function covPerLanguageSelect(lang,ver) {
+  console.log("hellophil")
+  var l = document.getElementById("lang");
+  var b = document.getElementById("branch");
+
+  l.value = lang;
+  b.value = ver;
+  covPerLanguage();
+}
+
+function covPerLanguage() {
+  var LO = document.getElementById("LO");
+  var CPL = document.getElementById("CPL");
+
+  LO.className = "mode";
+  CPL.className = "mode mode-selected";
+
+  var cplTable = document.getElementById("cplTable");
+  var leaderBoard = document.getElementById("leaderBoard");
+  cplTable.style.display = "block";
+  leaderBoard.style.display = "none";
 
 }
