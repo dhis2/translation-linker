@@ -166,7 +166,7 @@ function updateLeaderboard() {
     var leaderH = versions.map(identity);
     leaderH.push("Language");
     console.log(leaderH);
-    for(var i = leaderH.length - 1; i >= 2; i--) {
+    for(var i = leaderH.length - 1; i >= 0; i--) {
         var th = document.createElement("th");      // TABLE HEADER.
         th.innerHTML = leaderH[i];
         tr.appendChild(th);
@@ -180,7 +180,7 @@ function updateLeaderboard() {
         tabCellH.innerHTML = langs[l];
         tabCellH.className = "resource";
 
-        for (var v = versions.length - 1; v >= 2; v--) {
+        for (var v = versions.length - 1; v >= 0; v--) {
             var tabCell = tr.insertCell(-1);
             tabCell.className = "completion";
             // tabCell.addEventListener("click", covPerLanguage());
