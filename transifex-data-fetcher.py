@@ -50,9 +50,12 @@ for p in projects:
 
             base_version = r_slug.split('--')[0].replace('2-','').lstrip('v').replace('-x','')
             # print(r["slug"],' ---> ',version)
-
+            
+            if base_version == 'dev':
+                base_version = 'master
+                
             version_list = [base_version]
-            if base_version in ['master','dev']:
+            if base_version == 'master':
                 if p.homepage_url in togglers:
                     version_list += togglers[p.homepage_url] 
 
