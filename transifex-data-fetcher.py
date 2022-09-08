@@ -48,7 +48,7 @@ for p in projects:
             
             r_slug = r.attributes['slug']
 
-            base_version = r_slug.split('--')[0].replace('2-','').replace('v','').replace('-x','')
+            base_version = r_slug.split('--')[0].replace('2-','').lstrip('v').replace('-x','')
             # print(r["slug"],' ---> ',version)
 
             version_list = [base_version]
