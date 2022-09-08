@@ -52,7 +52,7 @@ for p in projects:
             # print(r["slug"],' ---> ',version)
 
             version_list = [base_version]
-            if base_version == 'master':
+            if base_version in ['master','dev']:
                 if p.homepage_url in togglers:
                     version_list += togglers[p.homepage_url] 
 
