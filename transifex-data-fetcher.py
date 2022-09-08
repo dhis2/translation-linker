@@ -52,7 +52,7 @@ for p in projects:
             # print(r["slug"],' ---> ',version)
             
             if base_version == 'dev':
-                base_version = 'master
+                base_version = 'master'
                 
             version_list = [base_version]
             if base_version == 'master':
