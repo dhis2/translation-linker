@@ -49,7 +49,7 @@ transifex = {
       "ti": 0,
       "hi_IN": 0,
       "ko_KR": 0,
-      "zh": 11749,
+      "zh": 11757,
       "es_419": 0,
       "tet": 3052,
       "ar_EG": 76,
@@ -155,7 +155,7 @@ transifex = {
       "ti": 0,
       "hi_IN": 0,
       "ko_KR": 0,
-      "zh": 9512,
+      "zh": 9780,
       "es_419": 0,
       "tet": 2227,
       "ar_EG": 64,
@@ -1351,7 +1351,7 @@ transifex = {
           "ar_IQ": "53.8%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "master--en-pot": {
           "am": "0.0%",
           "ar": "99.4%",
@@ -1991,7 +1991,7 @@ transifex = {
           "ti": "0.0%",
           "hi_IN": "0.0%",
           "ko_KR": "0.0%",
-          "zh": "99.1%",
+          "zh": "100.0%",
           "es_419": "0.0%",
           "tet": "17.2%",
           "ar_EG": "0.0%",
@@ -2592,7 +2592,7 @@ transifex = {
           "ti": "0.0%",
           "hi_IN": "0.0%",
           "ko_KR": "0.0%",
-          "zh": "99.8%",
+          "zh": "100.0%",
           "es_419": "0.0%",
           "tet": "39.2%",
           "ar_EG": "0.7%",
@@ -3193,7 +3193,7 @@ transifex = {
           "ti": "0.0%",
           "hi_IN": "0.0%",
           "ko_KR": "0.0%",
-          "zh": "99.5%",
+          "zh": "100.0%",
           "es_419": "0.0%",
           "tet": "8.1%",
           "ar_EG": "0.0%",
@@ -3374,7 +3374,7 @@ transifex = {
           "ar_IQ": "63.0%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v37--en-pot": {
           "am": "0.0%",
           "ar": "99.3%",
@@ -5124,7 +5124,7 @@ transifex = {
           "ar_IQ": "57.4%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v38--en-pot": {
           "am": "0.0%",
           "ar": "99.4%",
@@ -5601,7 +5601,7 @@ transifex = {
           "ti": "0.0%",
           "hi_IN": "0.0%",
           "ko_KR": "0.0%",
-          "zh": "99.1%",
+          "zh": "100.0%",
           "es_419": "0.0%",
           "tet": "17.2%",
           "ar_EG": "0.0%",
@@ -6147,7 +6147,7 @@ transifex = {
           "ti": "0.0%",
           "hi_IN": "0.0%",
           "ko_KR": "0.0%",
-          "zh": "83.8%",
+          "zh": "100.0%",
           "es_419": "0.0%",
           "tet": "41.8%",
           "ar_EG": "0.8%",
@@ -6766,7 +6766,7 @@ transifex = {
           "ar_IQ": "96.2%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v35--en-pot": {
           "am": "0.0%",
           "ar": "100.0%",
@@ -8726,7 +8726,7 @@ transifex = {
           "ar_IQ": "74.6%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v36--en-pot": {
           "am": "0.0%",
           "ar": "100.0%",
@@ -10527,7 +10527,7 @@ transifex = {
           "ar_IQ": "99.6%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v33--en-pot": {
           "am": "0.0%",
           "ar": "100.0%",
@@ -12379,7 +12379,7 @@ transifex = {
           "ar_IQ": "96.6%"
         }
       },
-      "APP: Dashboards": {
+      "APP: Dashboard": {
         "v34--en-pot": {
           "am": "0.0%",
           "ar": "100.0%",
@@ -14235,7 +14235,7 @@ transifex = {
     "APP: Charts": "app-charts",
     "APP-COMPONENT: UI": "app-component-ui",
     "APP-COMPONENT: D2 UI": "app-d2-ui",
-    "APP: Dashboards": "app-dashboards-app",
+    "APP: Dashboard": "app-dashboard-app",
     "APP: Data Administration": "app-data-administration-app",
     "APP: Data Entry": "app-data-entry",
     "APP: Data Quality": "app-data-quality",
