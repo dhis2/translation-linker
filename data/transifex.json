@@ -14235,7 +14235,7 @@ transifex = {
     "APP: Charts": "app-charts",
     "APP-COMPONENT: UI": "app-component-ui",
     "APP-COMPONENT: D2 UI": "app-d2-ui",
-    "APP: Dashboard": "app-dashboard-app",
+    "APP: Dashboard": "app-dashboards-app",
     "APP: Data Administration": "app-data-administration-app",
     "APP: Data Entry": "app-data-entry",
     "APP: Data Quality": "app-data-quality",
