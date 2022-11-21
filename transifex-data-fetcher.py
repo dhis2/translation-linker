@@ -51,7 +51,7 @@ for p in projects:
             base_version = r_slug.split('--')[0].replace('2-','').lstrip('v').replace('-x','')
             # print(r["slug"],' ---> ',version)
             
-            if base_version == 'dev':
+            if base_version in ['dev','development']:
                 base_version = 'master'
                 
             version_list = [base_version]
