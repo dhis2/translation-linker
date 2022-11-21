@@ -1,13 +1,13 @@
 {
-    "https://github.com/dhis2/app-management-app":["37","38"],
-    "https://github.com/dhis2/approval-app":["37","38"],
-    "https://github.com/dhis2/cache-cleaner-app":["35","36","37","38"],
-    "https://github.com/dhis2/capture-app":["38"],
+    "https://github.com/dhis2/app-management-app":["37","38","39"],
+    "https://github.com/dhis2/approval-app":["37","38","39"],
+    "https://github.com/dhis2/cache-cleaner-app":["35","36","37","38","39"],
+    "https://github.com/dhis2/capture-app":["38","39"],
     "https://github.com/dhis2/core-resource-app":["29","30","33"],
-    "https://github.com/dhis2/line-listing-app":["38"],
-    "https://github.com/dhis2/messaging-app":["29","30","31","32","33","34","35","36","37","38"],
-    "https://github.com/dhis2/reports-app":["33","34","35","36","37","38"],
-    "https://github.com/dhis2/scheduler-app":["36","37","38"],
-    "https://github.com/dhis2/sms-configuration-app":["35","36","37","38"],
-    "https://github.com/dhis2/usage-analytics-app":["32","33","34","35","36","37","38"]
+    "https://github.com/dhis2/line-listing-app":["38","39"],
+    "https://github.com/dhis2/messaging-app":["29","30","31","32","33","34","35","36","37","38","39"],
+    "https://github.com/dhis2/reports-app":["33","34","35","36","37","38","39"],
+    "https://github.com/dhis2/scheduler-app":["36","37","38","39"],
+    "https://github.com/dhis2/sms-configuration-app":["35","36","37","38","39"],
+    "https://github.com/dhis2/usage-analytics-app":["32","33","34","35","36","37","38","39"]
 }
