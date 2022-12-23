@@ -12,7 +12,7 @@ transifex = {
   "overview": {
     "master": {
       "am": 0,
-      "ar": 10184,
+      "ar": 10223,
       "bn": 203,
       "cs": 11949,
       "da": 1536,
@@ -2117,7 +2117,7 @@ transifex = {
       "APP: Maintenance": {
         "master--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "94.9%",
+          "ar": "96.6%",
           "bn": "0.8%",
           "cs": "99.8%",
           "da": "11.3%",
