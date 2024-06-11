@@ -22,7 +22,7 @@ lang_stats = {}
 lang_statsall = {}
 word_stats = {}
 projmap = {}
-versions = ("34","35","36","37","38","39","40","master")
+versions = ("36","37","38","39","40","41","master")
 
 ft = open('data/feature-toggling.json',)
 togglers = json.load(ft)
