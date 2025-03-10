@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolkit Localization Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <main class="container">
+    <h1>Toolkit Localization Dashboard</h1>
+    
+    <div class="language-selector-container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            Select Language
+          </h2>
+        </div>
+        <div class="card-content">
+          <select id="language-selector" class="select">
+            <option value="" disabled selected>Select a language</option>
+            <!-- Options will be populated by JavaScript -->
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="resources-container" class="resources-grid">
+      <!-- Resource cards will be populated by JavaScript -->
+    </div>
+  </main>
+
+  <!-- Template for resource cards -->
+  <template id="resource-card-template">
+    <div class="card resource-card">
+      <div class="card-header">
+        <h2 class="card-title">
+          <span class="resource-name"></span>
+          <span class="resource-id"></span>
+        </h2>
+      </div>
+      <div class="card-content">
+        <div class="section">
+          <h3 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Words Progress
+          </h3>
+          <div class="progress-items">
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                  </svg>
+                  Translated
+                </span>
+                <span class="progress-percent translated-percent"></span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar translated-progress"></div>
+              </div>
+              <div class="progress-details translated-details"></div>
+            </div>
+            
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  Reviewed
+                </span>
+                <span class="progress-percent reviewed-percent"></span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar reviewed-progress"></div>
+              </div>
+              <div class="progress-details reviewed-details"></div>
+            </div>
+            
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  Proofread
+                </span>
+                <span class="progress-percent proofread-percent"></span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar proofread-progress"></div>
+              </div>
+              <div class="progress-details proofread-details"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h3 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Strings Progress
+          </h3>
+          <div class="progress-items">
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                  </svg>
+                  Translated Strings
+                </span>
+                <span class="progress-percent translated-strings-percent"></span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar translated-strings-progress"></div>
+              </div>
+              <div class="progress-details translated-strings-details"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h3 class="section-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Last Updates
+          </h3>
+          <div class="updates-grid">
+            <div class="update-row">
+              <span class="update-label">Translation:</span>
+              <span class="update-value translation-update"></span>
+            </div>
+            <div class="update-row">
+              <span class="update-label">Review:</span>
+              <span class="update-value review-update"></span>
+            </div>
+            <div class="update-row">
+              <span class="update-label">Proofread:</span>
+              <span class="update-value proofread-update"></span>
+            </div>
+            <div class="update-row last-update-row">
+              <span class="update-label">Last Update:</span>
+              <span class="update-value last-update"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
