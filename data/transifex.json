@@ -10,7 +10,7 @@ transifex = {
   "overview": {
     "master": {
       "am": 1,
-      "ar": 10283,
+      "ar": 10317,
       "bn": 215,
       "cs": 12690,
       "da": 1557,
@@ -75,7 +75,7 @@ transifex = {
     },
     "37": {
       "am": 1,
-      "ar": 7854,
+      "ar": 7869,
       "bn": 153,
       "cs": 8604,
       "da": 1102,
@@ -140,7 +140,7 @@ transifex = {
     },
     "38": {
       "am": 1,
-      "ar": 7760,
+      "ar": 7775,
       "bn": 170,
       "cs": 9021,
       "da": 1090,
@@ -205,7 +205,7 @@ transifex = {
     },
     "39": {
       "am": 1,
-      "ar": 7679,
+      "ar": 7694,
       "bn": 159,
       "cs": 9234,
       "da": 1099,
@@ -270,7 +270,7 @@ transifex = {
     },
     "40": {
       "am": 1,
-      "ar": 7532,
+      "ar": 7547,
       "bn": 160,
       "cs": 9231,
       "da": 1073,
@@ -335,7 +335,7 @@ transifex = {
     },
     "41": {
       "am": 1,
-      "ar": 2244,
+      "ar": 2245,
       "bn": 48,
       "cs": 3544,
       "da": 319,
@@ -2455,7 +2455,7 @@ transifex = {
       "APP: Maintenance": {
         "master--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "91.8%",
+          "ar": "93.1%",
           "bn": "0.7%",
           "cs": "99.5%",
           "da": "11.2%",
@@ -3789,7 +3789,7 @@ transifex = {
       "APP: Import Export": {
         "master--en-pot": {
           "am": "0.0%",
-          "ar": "60.2%",
+          "ar": "60.5%",
           "bn": "1.8%",
           "cs": "94.5%",
           "da": "6.5%",
@@ -4591,7 +4591,7 @@ transifex = {
       "APP: Maintenance": {
         "v37--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "97.0%",
+          "ar": "97.7%",
           "bn": "0.8%",
           "cs": "100.0%",
           "da": "11.4%",
@@ -5523,7 +5523,7 @@ transifex = {
       "APP: Import Export": {
         "v37--en-pot": {
           "am": "0.0%",
-          "ar": "86.2%",
+          "ar": "86.5%",
           "bn": "2.5%",
           "cs": "100.0%",
           "da": "7.4%",
@@ -6390,7 +6390,7 @@ transifex = {
       "APP: Maintenance": {
         "v38--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "95.3%",
+          "ar": "95.9%",
           "bn": "0.7%",
           "cs": "100.0%",
           "da": "11.2%",
@@ -7255,7 +7255,7 @@ transifex = {
       "APP: Import Export": {
         "v38--en-pot": {
           "am": "0.0%",
-          "ar": "86.2%",
+          "ar": "86.5%",
           "bn": "2.5%",
           "cs": "100.0%",
           "da": "7.4%",
@@ -8254,7 +8254,7 @@ transifex = {
       "APP: Maintenance": {
         "v39--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "95.2%",
+          "ar": "95.8%",
           "bn": "0.7%",
           "cs": "100.0%",
           "da": "11.2%",
@@ -9119,7 +9119,7 @@ transifex = {
       "APP: Import Export": {
         "v39--en-pot": {
           "am": "0.0%",
-          "ar": "61.3%",
+          "ar": "61.5%",
           "bn": "1.8%",
           "cs": "96.2%",
           "da": "6.1%",
@@ -9923,7 +9923,7 @@ transifex = {
       "APP: Maintenance": {
         "v40--i18n-module-en-properties": {
           "am": "0.0%",
-          "ar": "94.7%",
+          "ar": "95.3%",
           "bn": "0.7%",
           "cs": "99.9%",
           "da": "11.2%",
@@ -10723,7 +10723,7 @@ transifex = {
       "APP: Import Export": {
         "v40--en-pot": {
           "am": "0.0%",
-          "ar": "61.3%",
+          "ar": "61.5%",
           "bn": "1.8%",
           "cs": "96.2%",
           "da": "6.1%",
@@ -11860,7 +11860,7 @@ transifex = {
       "APP: Import Export": {
         "master--en-pot": {
           "am": "0.0%",
-          "ar": "60.2%",
+          "ar": "60.5%",
           "bn": "1.8%",
           "cs": "94.5%",
           "da": "6.5%",
