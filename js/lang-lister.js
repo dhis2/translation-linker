@@ -104,7 +104,7 @@ function updateLangTable() {
       var tabCell = tr.insertCell(-1);
       tabCell.className = "resource";
       var mylink =
-        '<a href="https://www.transifex.com/hisp-uio/' +
+        '<a href="https://app.transifex.com/hisp-uio/' +
         projmap[proj] +
         "/translate/#" +
         l +
