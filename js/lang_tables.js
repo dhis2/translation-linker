@@ -93,7 +93,7 @@ function updateLangTable() {
         '<div class="progress" style="width:' + perc + ';">' + perc + "</div>";
       var tabCell = tr.insertCell(-1);
       var mylink =
-        '<a href="https://www.transifex.com/hisp-uio/' +
+        '<a href="https://app.transifex.com/hisp-uio/' +
         projmap[proj] +
         "/translate/#" +
         l +
