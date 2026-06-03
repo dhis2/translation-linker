@@ -2785,7 +2785,7 @@ transifex = {
           "ny_MW": "0.0%"
         }
       },
-      "APP: Maintenance Beta": {
+      "APP: Metadata Management": {
         "master--en-pot": {
           "am": "0.0%",
           "ar": "31.8%",
@@ -12686,7 +12686,7 @@ transifex = {
     "APP: GIS App (Legacy)": "app-gis-app",
     "APP: Line Listing": "app-line-listing",
     "APP: Maintenance": "app-maintenance",
-    "APP: Maintenance Beta": "app-maintenance-refactor",
+    "APP: Metadata Management": "app-maintenance-refactor",
     "APP: App Management": "app-management-app",
     "APP: Maps": "app-maps",
     "APP: Menu Management": "app-menu-management",
