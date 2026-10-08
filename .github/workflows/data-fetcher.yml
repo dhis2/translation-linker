@@ -44,6 +44,6 @@ jobs:
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.DHIS2_BOT_GITHUB_TOKEN }}
 
    
