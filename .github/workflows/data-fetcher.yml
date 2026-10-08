@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.DHIS2_BOT_GITHUB_TOKEN }}
     
     - name: Set up Python 3.8
       uses: actions/setup-python@v4
@@ -42,8 +44,12 @@ jobs:
       shell: bash
       
     - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.DHIS2_BOT_GITHUB_TOKEN }}
-
-   
+      shell: bash
+      run: |
+        git add -A data
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        git commit -S -m "chore: autopublish $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+        git push origin HEAD:${{ github.ref_name }}
